@@ -17,8 +17,8 @@ for i in range(countries.size):
 	print(codes[i] + "\t" + str(TVA[i]) + "%\t" + countries[i])
 
 
-totalHT = input('Total HT :')
-totalTVA = input('Montant TVA :')
+totalHT = int(input('Total HT :'))
+totalTVA = int(input('Montant TVA :'))
 
 total = totalHT+totalTVA
 print(total)
