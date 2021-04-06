@@ -16,7 +16,9 @@ TVA = np.array([19, 20, 21, 20, 19, 25, 25, 21, 20,
 for i in range(countries.size):
 	print(codes[i] + "\t" + str(TVA[i]) + "%\t" + countries[i])
 
-totalHT = int(input('Total HT :'))
+price = int(input('Prix du produit :'))
+qtt = int(input('Quantité de produit :'))
+totalHT = price*qtt
 codePays = input('Code pays :')
 for i in range(countries.size):
 	if codePays == codes[i]:
