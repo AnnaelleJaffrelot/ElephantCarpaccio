@@ -16,9 +16,11 @@ TVA = np.array([19, 20, 21, 20, 19, 25, 25, 21, 20,
 for i in range(countries.size):
 	print(codes[i] + "\t" + str(TVA[i]) + "%\t" + countries[i])
 
-
 totalHT = int(input('Total HT :'))
-tauxTVA = int(input('Taux TVA :'))
+codePays = input('Code pays :')
+for i in range(countries.size):
+	if codePays == codes[i]:
+		tauxTVA = TVA[i]
 totalTVA = (totalHT/100)*tauxTVA
 
 total = totalHT+totalTVA
