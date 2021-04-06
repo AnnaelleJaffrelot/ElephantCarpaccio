@@ -18,7 +18,8 @@ for i in range(countries.size):
 
 price = int(input('Prix du produit :'))
 qtt = int(input('Quantité de produit :'))
-totalHT = price*qtt
+reduction = int(input('Montant de la réduction :'))
+totalHT = (price*qtt)-reduction
 codePays = input('Code pays :')
 for i in range(countries.size):
 	if codePays == codes[i]:
