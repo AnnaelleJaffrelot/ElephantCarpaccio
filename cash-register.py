@@ -15,3 +15,10 @@ TVA = np.array([19, 20, 21, 20, 19, 25, 25, 21, 20,
 
 for i in range(countries.size):
 	print(codes[i] + "\t" + str(TVA[i]) + "%\t" + countries[i])
+
+
+totalHT = input('Total HT :')
+totalTVA = input('Montant TVA :')
+
+total = totalHT+totalTVA
+print(total)
