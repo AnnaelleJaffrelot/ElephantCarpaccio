@@ -18,7 +18,8 @@ for i in range(countries.size):
 
 
 totalHT = int(input('Total HT :'))
-totalTVA = int(input('Montant TVA :'))
+tauxTVA = int(input('Taux TVA :'))
+totalTVA = (totalHT/100)*tauxTVA
 
 total = totalHT+totalTVA
 print(total)
